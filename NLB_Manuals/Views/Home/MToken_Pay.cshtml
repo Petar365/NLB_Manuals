@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Плаќање со м-Клик";
+}
+<link href="~/css/Style.css" rel="stylesheet" />
+
+<main aria-labelledby="title">
+    <div class="nlb-background p-5 pb-2">
+        <div class="container body-content text-center">
+            <h1 class="p-3">
+                Ново Плаќање со НЛБ м-Kлик
+            </h1>
+            <p class="pb-3">
+                НЛБ мКлик апликацијат ви нуди можност за поедноставно и по сигурно потпишување на налог со м-Токен Push нотификација
+            </p>
+
+            <img src="~/images/Mtoken/potpis-Mtoken.png" class="pb-3 img35"/>
+            <img src="~/images/Mtoken/Potpisi nalog.png" class="pb-3 img75" />
+
+            <p>
+                Преку "потпиши со мТокен" има нова можност за потпишување на налогот "Испрати Push",
+                со кликање на "Потпишете го налогот" во НЛБ мКлик апликацијата се пристигнува барање за авторизација со информации за корисникот:
+                Име на налогопримач, Трансакциска сметка на налогопримачот и Износ
+            </p>
+            <img src="~/images/Mtoken/potpisNalog.PNG" class="pb-3 pe-1 img35" />
+            <img src="~/images/Mtoken/potpisNalogConfirm.PNG"  class="pb-3 ps-1 img35"/>
+            <p>
+                Oдкога ќе се потврди барањето добиваме порака "Успешно одобрено барање" и налогот е пратен во банка.
+            </p>
+
+
+            <h1>Опции за м-Токен</h1>
+            <p class="nlb_color"><a href="@Url.Action("MToken_Login","Home")">Најава со м-Токен</a></p>
+            <p class="nlb_color"><a href="@Url.Action("MToken_Pay","Home")">Плаќање со м-Токен</a></p>
+
+        </div>
+    </div>
+    <style>
+       
+        img {
+            width: 35%;
+            height: auto;
+        }
+    </style>
+</main>

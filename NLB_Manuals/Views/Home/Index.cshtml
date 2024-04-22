@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Почетна";
+}
+
+<link href="~/css/Style.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+<main>
+    <div class="nlb-background p-5 pb-2" style="min-height:700px">
+
+        <div class="container body-content">
+            <ul class="ulpaddingtop" style="padding-left:0px">
+                <li><h3><a class="nlb_color" href="@Url.Action("Pay_Smetki","Home")">Како да платам сметки</a></h3></li>
+                <li><h3><a class="nlb_color" href="@Url.Action("Mtoken","Home")">Што е мКлик</a></h3></li>
+                <ul>
+                    <li><h5><a class="nlb_color" href="@Url.Action("MToken_Login","Home")">Најава со мКлик</a></h5></li>
+                    <li><h5><a class="nlb_color" href="@Url.Action("MToken_Pay","Home")">Плаќање со мКлик</a></h5></li>
+                </ul>
+                <li><h3><a class="nlb_color align-content-end" href="@Url.Action("Savings","Home")">Уплата на постепено штедење</a></h3></li>
+                <li id="chromelink" class="browserlinks"><h3><a class="nlb_color align-content-end" href="@Url.Action("TokenLoginCorporate_Chrome","Home")">Дополнителни инструкции при најава со Токен со сертификат за Правни лица Chrome</a></h3></li>
+                <li id="firefoxlink" class="browserlinks"><h3><a class="nlb_color align-content-end" href="@Url.Action("TokenLoginCorporate_Firefox","Home")">Дополнителни инструкции при најава со Токен со сертификат за Правни лица Mozila Firefox</a></h3></li>
+                <li><h3><a class="nlb_color align-content-end" href="@Url.Action("Pravila_bezbedno_koristenje","Home")">Правила за безбедно користење на НЛБ Проклик</a></h3></li>
+
+            </ul>
+        </div>
+    </div>
+    <style>
+        li {
+            padding-bottom: 0.5rem;
+            list-style-type: none
+        }
+
+        .browserlinks {
+            display:none;
+        }
+    </style>
+    <script>
+        //Check which Browser is used
+        $(document).ready(function () {
+            if (navigator.userAgent.indexOf("Chrome") != -1) {
+                $("#firefoxlink").remove();
+                $("#chromelink").show();
+            } else if (navigator.userAgent.indexOf("Firefox") != -1) {
+                $("#chromelink").remove();
+                $("#firefoxlink").show();
+            }
+        });
+      
+    </script>
+</main>

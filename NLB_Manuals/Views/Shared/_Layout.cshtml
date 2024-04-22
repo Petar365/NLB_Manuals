@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 24x7 Asee</title>
+    <link rel="stylesheet" href="~/css/Style.css" />
+    <link href="~/css/Style.css" rel="stylesheet" />
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/jquery-3.7.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm nlb-navbar">
+        <div class="container" style="padding-left:0;padding-right:0;margin:0 !important;">
+            <div class="navbar-brand">
+                <a href="/">
+                    <img id="login-logo" class="nav-img" src="~/logo_nlb_mk.svg" />
+                </a>
+            </div>
+            <button type="button" class="navbar-toggler m-3" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between nav-link_nlb">
+                <ul class="nav navbar-nav ms-auto justify-content-end pe-5 " style="width:max-content">
+                    <li class="nav-item nlb list-type-none"><a class="nav-link nlb" href="https://nlb.mk/" target="_blank">За банка</a></li>
+                    <li class="nav-item nlb"><a class="nav-link active" href="https://www.nlbgroup.si/nlb-group" target="_blank">НЛБ Групација</a></li>
+                    <li class="nav-item nlb"><a class="nav-link active" href="mailto:helpdesk@nlb.mk">Контакт</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+
+
+        @RenderBody()
+
+
+        <div class="footer">
+            <div class="row">
+                <div class="col-md-4 pull-left">
+                    <h4>Help desk:</h4>
+                    <span>
+                        <div>Email: helpdesk@nlb.mk</div>
+                        <div>
+                            Телефон:
+                            <a href="tel:0215600">
+                                15 600
+                            </a>
+
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-md-4 pb-1" style="margin-top: 20px;">
+                <span class="bigger-">
+                    Copyright © 2024 <a href="https://see.asseco.com/" target="_blank">ASEE</a>
+                </span>
+
+            </div>
+            <div class="col-md-4 ">
+                <div>
+                    Поддржани Оперативни Системи &nbsp;&nbsp;&nbsp;&nbsp; <div class="pt-1 footerimages">
+                        <img style="height: 50px; width: 50px" display: inline-block" src="~/images/footer/Windows-removebg-preview.png">
+                        <img style="height: 35px; width: 30px" display: inline-block" src="~/images/footer/linux.png">
+                        <img style="height: 40px; width: 40px" display: inline-block" src="~/images/footer/apple.png" />
+                    </div>
+                </div>
+                <br>
+                <div>
+                    Поддржани Пребарувачи &nbsp;&nbsp;&nbsp;&nbsp; <div class="pt-2 footerimages">
+                        <img style="height: 30px; width: 30px; display: inline-block" src="~/images/footer/chrome.png">
+                        <img style="height: 30px; width: 30px; display: inline-block" src="~/images/footer/firefox.png">
+                        <img style="height: 30px; width: 30px; display: inline-block" src="~/images/footer/edge.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <button type="button"
+            class="btn btn-back-to-top btn-floating btn-lg rounded-circle"
+            id="btn-back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16" style="vertical-align:unset">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+        </svg>
+    </button>
+
+    <style>
+
+        .nav-link {
+            font-size: larger;
+        }
+
+        #btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+
+        //Logo Effect
+        $("#login-logo").on({
+            mouseenter: function () {
+                $({ A: 0 }).animate({ A: 203 }, {
+                    step: function (A) {
+                        var dA = 15;
+                        $("#login-logo").css("-webkit-mask", "-webkit-gradient(radial, 23 28, " + A + ", 23 28, " + (A + dA) + ", from(rgb(0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.2)), to(rgb(0, 0, 0)))");
+                        $("#login-logo").css("mask-image", "radial-gradient(" + (A + dA) + "px, 23 28, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgb(0, 0, 0) 100%");
+                    }, duration: 2000
+                });
+            }
+        });
+
+
+
+
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
+
+
+
+

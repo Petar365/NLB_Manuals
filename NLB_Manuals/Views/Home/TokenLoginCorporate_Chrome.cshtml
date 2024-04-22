@@ -1,0 +1,136 @@
+﻿
+@{
+    ViewBag.Title = "Дополнителни инструкции при најава со Токен (Правни лица)";
+}
+
+<link href="~/css/Style.css" rel="stylesheet" />
+<main>
+    <div class="nlb-background p-5 pb-2">
+        <div class="container body-content text-center">
+            <h1 class="p-3">
+                Дополнителни инструкции при најава со Токен
+            </h1>
+            <p>
+                За <b>најава со токен со сертификат</b> на Google Chrome на новата пларформа за електронско банкарство за правни лица кликнете на иконата означена со црвено
+            </p>
+            <img src="~/images/Manuals/Login_Sertificate.png" class="img25"/><p>Сл. 1</p>
+
+            <p>Автоматски се проверува дали се инсталирани <b>Google Chrome екстензија</b> и <b>компонента за потпишување</b>. Ако не се инсталирани се појавува прозорец како на Слика2.</p>
+            <img src="~/images/Manuals/Extension_Component_popup.png"  class="img50"/><p>Сл. 2</p>
+
+            <p >Инсталацијата на Google Chrome екстензија е едноставна и во неколку чекори.</p>
+            <div class="text-center">
+                <ul style="list-style-position: inside;text-align: center;">
+
+                    <li class="pb-1">Кликнете на десното копчеto download означено на Сл.2 за да инсталирате Google Chrome екстензија</li>
+                    <img src="~/images/Manuals/Extension_Download_Button.png"  class="img50"/>
+
+                    <li class="pt-2 pb-2">Кликнете на ADD TO CHROME</li>
+                    <img src="~/images/Manuals/Asseba_Crypto_Signing.png"  class="img50"/>
+
+                    <li class="pt-2 pb-2">Кликнете на Add extension за да ја додадете екстензијата во прелистувачот</li>
+                    <img src="~/images/Manuals/AddExtensionConfirm.png"  class="img50"/>
+                    <li class="pt-2 pb-2">
+                        Kако потврда за успешно инсталирање на екстензијата ќе се појави следнава слика.
+                        Иконата за екстензијата ќе се појави во горниот десен агол на Google Chrome
+                        прелистувачот.
+                    </li>
+                    <img src="~/images/Manuals/Asseba_Extension_location.png"  class="img50"/>
+
+                </ul>
+            </div>
+            <p>
+                Откако е инсталирана екстензијата ако се кликне повторно на најава со токен со
+                сертификат автоматски се проверува дали се инсталирани <b>Google Chrome екстензија</b> и <b>Компонента за потпишување</b> но сега ќе се појави прозорец за инсталавиза на компонента за запишување како на Слика 3.
+            </p>
+            <img src="~/images/Manuals/Component.png"  class="img50"/><p>Сл. 3</p>
+
+            <p class="pt-3">Инсталацијата на компонентата за потпишување е едноставна и во неколку чекори.</p>
+            <div>
+                <ul>
+                    <li>Кликнете на десното копче download,означено на слика 3. за да ја симнете компонентата за потпиување</li>
+                    <li>
+                        Кликнете на аsseba-crypto-signer.msi за да започенете со инсталација на компонентата за
+                        потпишување.
+                    </li>
+
+                    <li class="pb-3">
+                        Селектрирајте го квадратчето I accept the terms in the license agreement како на
+                        сликата доле и кликнете Install.
+                    </li>
+                    <img src="~/images/Manuals/acsSetup1.png"  class="img50"/>
+
+                    <li class=" pt-3 pb-3">
+                        Кликнете Yes на user account control прозорецот за да започне инсталацијата.
+                    </li>
+                    <img src="~/images/Manuals/acsSetup2.png"  class="img50"/>
+
+                    <li class=" pt-3 pb-3">За крај на успешната инсталација на компонентата за потпишување кликнете Finish.</li>
+                    <img src="~/images/Manuals/acsSetup3.png" class="img50"/>
+                </ul>
+            </div>
+
+            <p>
+                Со ова завршено е инсталирањето на Google Chrome екстензијата и компонентата за
+                потпишување.
+                Ако ја освежите страната за најава повеќе нема да се појави скокачки прозор како на
+                слика 2 или слика 3.<br />
+                Преостанува да се <b>
+                    инсталираат драјвери и библиотека за Gemalto .Net токен или Classic
+                    Client 6.3 компоненти за Gemalto Java токен
+                </b> инсталираат драјвери и библиотека за Gemalto .Net токен или Classic
+                Client 6.3 компоненти за Gemalto Java токен
+            </p>
+
+            <h4 class="pt-5 pb-2">Најава со токен со сертификат со веќе инсталирана екстензија и компонента</h4>
+            <p>
+                За <b>најава со токен со сертификат</b> на Google Chrome на новата платформа за електронско
+                банкарство за правни лица кликнете на иконата означена со црвено на Сл. 4.
+            </p>
+            <img src="~/images/Manuals/Login_Sertificate.png" class="img25"/><p>Сл. 4</p>
+            <p class="pt-3">Кликнете на копчето Најава</p>
+            <img src="~/images/Manuals/certificateLoginButton.png" class="img25"/>
+
+            <p class="pt-3">
+                Ќе се појави прозорецот на компонентата за потпишување. Внесете го ПИН-от од токенот
+                и кликнете на копчето Потврди за да се најавите.
+            </p>
+            <img src="~/images/Manuals/ACS1.png"  class="img50"/>
+            <p class="pt-3">
+                Детали за компонентата за потпишување
+            </p>
+            <p>
+                Прозорецот на компонентата за потпишување се појавува над сите апликации.<br />
+
+                Во опаѓачката листа на <b>Изберете го Вашиот сертификат</b> се листаат сите сертификати од
+                сите приклучени токени.<br />
+
+                Ако сакате да видите повеќе детали за приклучените токени кликнете на опаѓачкото мени
+                <b>Прикажи детали за приклучени уреди</b>. Во ова мени се листаат сите приклучени токени
+                во компјутерот. Името на токенот е прикажана во колоната <b>Reader name</b> а сертификатот
+                кој е издаден на токенот е прикажан во колоната <b>Certificate label</b>.
+            </p>
+            <img src="~/images/Manuals/ACS2.png" class="img50 pb-4"/>
+        </div>
+    </div>
+    <style>
+       
+
+       
+
+        ul {
+            list-style-position: inside;
+            text-align: center;
+        }
+
+        li {
+            color: #482f94;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        p {
+            font-weight: 400;
+        }
+    </style>
+</main>

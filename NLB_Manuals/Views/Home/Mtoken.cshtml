@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Што е м-Токен";
+}
+<link href="~/css/Style.css" rel="stylesheet" />
+
+<main aria-labelledby="title">
+    <div class="nlb-background p-5 pb-2">
+        <div class="container body-content text-center">
+            <h1 class="p-3">
+                Што е
+                <span class="d-inline-block font-italic" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Strong Customer Authentication
+">SCA</span>
+                мКлик
+            </h1>
+
+            <p class="pb-3">
+                НЛБ мКлик е софтверска апликација која се инсталира и користи преку мобилен телефон а служи за идентификација на корисникот
+                и потврда на трансакцијата во системот за електронско банкарство за физички лица на НЛБ банка на Интернет страната <a href="www.nlbklik.com.mk.">www.nlbklik.com.mk.</a>
+                Својата примена ја наоѓа во електорнското банкарство и телефонското банкарство, e-Commerce.
+                Разликата е во тоа што М-токенот е инсталиран на мобилниот апарат и со тоа е попрактичен и подостапен за користење.
+            </p>
+            <h1 class="p-3">
+                Регистрација и инсталација
+            </h1>
+            <p>
+                За да може да ја користите НЛБ мКлик апликацијата потребно е да пополните формулар за регистрација и да го доставите во која било експозитура на
+                НЛБ банка. После пријавата на Вашиот СМС ќе го добиете активацискиот код, кој служи за генерирање на PIN при првата најава.
+            </p>
+            <img src="~/images/Mtoken/activationCode.PNG" class="p-3 img35" />
+            <p>
+                При првата најава на апликацијата потребно е да се внесе активацискиот код и потоа ќе ви биде понудена
+                можност за внес и потврда на PIN-от, кој ќе се користи во сите идни најави на НЛБ мКлик апликацијата.
+            </p>
+
+            <img src="~/images/Mtoken/newPin.PNG" class="p-3 img35" />
+            <img src="~/images/Mtoken/pin.PNG" class="p-3 img35" />
+            <h1>Мои сметки</h1>
+            <img src="~/images/Mtoken/moiSmetki.PNG" class="p-3 img35" />
+
+            <h1>Сигурност</h1>
+            <p>
+                НЛБ мТокен апликацијата се користи за истата намена како и хардверскиот токен и нуди еднакво ниво на сигурност,
+                со тоа што и апликацијата како и хардверскиот токен, е заштитена со PIN број кој единствено е познат на сопственикот на мобилниот телефон.
+                PIN-от за пристап на апликацијата може да се промени во секој момент. Исто така, НЛБ мТокен апликацијата автоматски се гаси после 3 минути неактивност.
+            </p>
+
+            <h1>Опции за м-Токен</h1>
+            <p class="nlb_color"><a href="@Url.Action("MToken_Login","Home")">Најава со м-Токен</a></p>
+            <p class="nlb_color"><a href="@Url.Action("MToken_Pay","Home")">Плаќање со м-Токен</a></p>
+
+
+
+        </div>
+    </div>
+
+
+    <style>
+        #tooltip {
+            color: #fff;
+            background: #363636;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            border-radius: 8px;
+            position: absolute;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        button {
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 10px 15px;
+            color: #fff;
+            background: rgb(48, 19, 129);
+        }
+    </style>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</main>

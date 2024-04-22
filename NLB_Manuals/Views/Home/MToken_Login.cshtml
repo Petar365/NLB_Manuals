@@ -1,0 +1,37 @@
+﻿<link href="~/css/Style.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "мКлик Логин";
+}
+
+
+<main aria-labelledby="title">
+    <div class="nlb-background p-5 pb-2">
+        <div class="container body-content text-center">
+            <h1 class="p-3">
+                Најава со НЛБ мКлик
+            </h1>
+            <p class="pb-3">
+                НЛБ мКлик апликацијат ви нуди можност за поедноставна и по сигурна најава на <a href="https://nlbklik.com.mk/Account/Login" target="_blank">НЛБ Клик</a> со најава со м-Токен Push нотификација
+            </p>
+            <img src="~/images/Mtoken/login_mtoken.png" class="img35"/>
+            <p>
+                Со внесување на корисничко име и кликање на копчето "Најава" во НЛБ мКлик апликацијата пристигнува барање за авторизација со информации за корисникот: Име на корисник, Пребарувач, Оперативен систем, Локација
+                
+            </p>
+            <img class="pb-3 img35" src="~/images/Mtoken/loginNotification.PNG" />
+            <img class="pb-3 img35" src="~/images/Mtoken/loginNotificationConfirm.PNG" />
+            <p>
+                Oткога ќе се потврди барањето добиваме порака "Успешно одобрено барање" и корисникот е логиран во НЛБ Клик.
+            </p>
+
+            <h1>Опции за м-Токен</h1>
+            <p class="nlb_color "><a href="@Url.Action("MToken_Login","Home")">Најава со м-Токен</a></p>
+            <p class="nlb_color"><a href="@Url.Action("MToken_Pay","Home")">Плаќање со м-Токен</a></p>
+
+        </div>
+    </div>
+    <style>
+        
+    
+    </style>
+</main>

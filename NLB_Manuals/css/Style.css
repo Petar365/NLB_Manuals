@@ -1,0 +1,260 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh
+}
+
+body {
+    font-family: 'Roboto', 'OpenSans', Arial, sans-serif !important;
+    overflow-x: hidden;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+@media screen and (min-width:425px) {
+    .container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+.nlb-navbar {
+    border-bottom: solid;
+    border-bottom-width: 6px;
+    border-bottom-color: #26007d;
+}
+
+.nav-img {
+    width: 203px !important;
+    height: 55px !important;
+    margin-left: 10px !important;
+}
+
+.container {
+    min-width: 100% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.nav-link {
+    background: none !important;
+    color: #a1a2a4 !important;
+    text-decoration: none;
+}
+
+    .nav-link:hover {
+        color: #482f94;
+        transition-delay: 0s;
+        transition-duration: 0.5s;
+        transition-property: color;
+        transition-timing-function: ease;
+    }
+
+.nlb-background {
+    background-image: url('../images/login-bg_gray2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    border-top: 6px solid #26007d
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        display: none;
+    }
+}
+
+.footerimages {
+    display: inline-block
+}
+
+@media screen and (max-width:1024px) {
+    .footerimages {
+        display: block;
+    }
+}
+
+.nlb_color {
+    text-decoration: none !important;
+    background: none !important;
+    color: #a1a2a4;
+    text-decoration: none;
+    font-weight: 600 !important;
+}
+
+    .nlb_color:hover {
+        color: #482f94;
+        transition-delay: 0s;
+        transition-duration: 0.5s;
+        transition-property: color;
+        transition-timing-function: ease;
+    }
+
+p {
+    color: #482f94;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.footer a {
+    font-weight: 600;
+    backface-visibility: hidden;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: color;
+    transition-timing-function: ease;
+    text-decoration: none;
+    color: #26007d;
+}
+
+    .footer a a:visited, a:hover, a:active {
+        transition-delay: 0s;
+        transition-duration: 0.5s;
+        transition-property: color;
+        transition-timing-function: ease;
+        color: #337ab7;
+    }
+
+.img75 {
+    width: 75%;
+    height: auto;
+}
+
+.img50 {
+    width: 50%;
+    height: auto;
+}
+
+.img35 {
+    width: 35%;
+    height: auto;
+}
+
+.img25 {
+    width: 25%;
+    height: auto;
+}
+
+@media screen and (max-width:425px) {
+    .img75 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .img75 {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .img50 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .img50 {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .img35 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .img35 {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .img25 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .img25 {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .buttonpaddingleft {
+        padding-inline-start: 50%;
+    }
+}
+
+.ulpaddingtop {
+    padding-top: 7rem;
+}
+
+@media screen and (max-width:575px) {
+    .ulpaddingtop {
+        padding-top: 2rem;
+    }
+}
+
+.navbar-toggler {
+    margin-right: 16px
+}
+
+@media screen and (max-width:575px) {
+    .ms-auto {
+        width: 70%;
+        margin: auto;
+        text-align:center;
+        padding:0 !important;
+    }
+}
+
+
+.btn-back-to-top {
+    border-color: #26007D !important;
+    color: #26007D !important;
+}
+    .btn-back-to-top:hover {
+        color: #fff !important;
+        background-color: #26007D !important;
+        border-color: #26007D !important;
+    }
